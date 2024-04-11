@@ -2,6 +2,8 @@ Spring boot with Redis Cache
 --
 This project is a simple example of how to use Redis cache with Spring Boot.
 
+## Prepequisites
+
 Start redis server with docker:
 ```shell
 docker run --name redis -p 6379:6379 -d redis:latest
@@ -21,8 +23,12 @@ Create table in postgres:
 ```shell
 ```postgresql
 CREATE TABLE Item (
-    id varchar(11) NOT NULL,
+    id serial NOT NULL,
     description varchar(200) NOT NULL,
     PRIMARY KEY (id)
 );
 ```
+
+## References
+- [Spring Boot Redis Cache](https://www.baeldung.com/spring-boot-redis-cache)
+- [Spring Boot Evict Cache](https://www.baeldung.com/spring-boot-evict-cache)
