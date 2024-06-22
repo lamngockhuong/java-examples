@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.2.4'
+    id 'org.springframework.boot' version '3.3.1'
     id 'io.spring.dependency-management' version '1.1.4'
 }
 
@@ -16,15 +16,15 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:3.2.4'
-    implementation 'org.springframework.boot:spring-boot-starter-cache:3.2.4'
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis:3.2.4'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.2.4'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools:3.2.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.3.1'
+    implementation 'org.springframework.boot:spring-boot-starter-cache:3.3.1'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:3.3.1'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.3.1'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools:3.3.1'
     runtimeOnly 'org.postgresql:postgresql:42.7.3'
     compileOnly 'org.projectlombok:lombok:1.18.32'
     annotationProcessor 'org.projectlombok:lombok:1.18.32'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.2.4'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.3.1'
 }
 
 tasks.named('test') {
